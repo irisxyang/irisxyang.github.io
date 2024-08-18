@@ -5,7 +5,8 @@ function NavBar() {
   return (
     <nav className="nav-container">
       <a className="nav-title" href="#home">
-        Iris Yang
+        <img src="/logo.svg" height={36} />
+        <span style={{ marginLeft: 8 }}>Iris Yang</span>
       </a>
       <div>
         <NavBarLink destination="#home">Home</NavBarLink>
