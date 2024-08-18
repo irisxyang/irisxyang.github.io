@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 function NavBar() {
   return (
-    <nav>
-      <NavBarLink destination="/">Home</NavBarLink>
-      <NavBarLink destination="/about">About</NavBarLink>
+    <nav className="nav-container">
+      <a className="nav-title" href="#home">
+        Iris Yang
+      </a>
+      <div>
+        <NavBarLink destination="#home">Home</NavBarLink>
+        <NavBarLink destination="#about">About</NavBarLink>
+        <NavBarLink destination="#project">Projects</NavBarLink>
+        <NavBarLink destination="#contact">Contact</NavBarLink>
+      </div>
     </nav>
   );
 }
@@ -17,7 +24,11 @@ type NavBarLinkProps = {
 
 function NavBarLink(props: NavBarLinkProps) {
   const { destination, children } = props;
-  return <Link to={destination}>{children}</Link>;
+  return (
+    <a className="nav-link" href={destination}>
+      {children}
+    </a>
+  );
 }
 
 export default NavBar;

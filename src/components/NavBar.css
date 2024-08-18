@@ -1,0 +1,20 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background-color: var(--default-accent-color);
+  position: sticky;
+  top: 0;
+}
+
+.nav-link {
+  margin: 0px 12px;
+  text-decoration: none;
+}
+
+.nav-title {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+}

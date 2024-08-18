@@ -1,21 +1,22 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NotFoundPage from "./pages/NotFoundPage";
-import AboutPage from "./pages/AboutPage";
-import HomePage from "./pages/HomePage";
+import AboutSection from "./pages/AboutSection";
+import HomeSection from "./pages/HomeSection";
+import ContactSection from "./pages/ContactSection";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import ProjectSection from "./pages/ProjectSection";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+      <div id="home" />
       <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about/" element={<AboutPage />} />
-        {/* Make sure this is the last route */}
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </BrowserRouter>
+      <HomeSection />
+      <AboutSection />
+      <ProjectSection />
+      <ContactSection />
+      <Footer />
+    </>
   );
 }
 

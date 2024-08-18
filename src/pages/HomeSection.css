@@ -1,0 +1,16 @@
+.title-text {
+  font-size: 128px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+.home-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/gwoc.webp");
+  background-position: center center;
+  background-size: cover;
+  padding: 128px;
+}
