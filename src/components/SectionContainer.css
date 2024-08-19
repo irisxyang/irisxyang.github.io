@@ -1,5 +1,6 @@
 .section-container {
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 48px 64px;
+  align-items: center;
 }

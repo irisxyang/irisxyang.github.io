@@ -4,7 +4,7 @@ import "./HomeSection.css";
 export default function HomeSection() {
   return (
     <section className="home-background">
-      <h1 className="text-center title-text">Iris Yang {">.<"}</h1>
+      <h1 className="text-center title-text">Iris Yang</h1>
     </section>
   );
 }

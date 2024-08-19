@@ -7,7 +7,7 @@ type Props = {
 
 export default function SectionContainer({ children, id }: Props) {
   return (
-    <div className="section-container border" id={id}>
+    <div className="section-container" id={id}>
       {children}
     </div>
   );
