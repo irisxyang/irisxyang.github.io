@@ -1,0 +1,32 @@
+.project-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/520.webp");
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 20%;
+  flex-direction: column;
+}
+
+.project-container {
+  display: flex;
+
+  justify-content: center;
+  background-color: white;
+  opacity: 80%;
+  flex-direction: column;
+
+  padding: 48px;
+  margin-bottom: 28px;
+}
+
+.project-name {
+  color: black;
+  margin-top: 0;
+}
+
+.project-description {
+  color: black;
+  font-size: 18px;
+}
