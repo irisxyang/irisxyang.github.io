@@ -1,0 +1,49 @@
+.contact-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../images/cloud1.webp");
+  background-position: center center;
+  background-size: cover;
+  height: 440px;
+  width: 300px;
+  margin: 28px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-decoration: none;
+}
+
+.contact-container-layer {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.contact-container-layer:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-name {
+  margin-top: 100px;
+  color: white;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.contact-subheading {
+  color: white;
+  text-decoration: none;
+}

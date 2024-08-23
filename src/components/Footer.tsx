@@ -6,6 +6,7 @@ export default function Footer() {
       <a href="#home" style={{ marginBottom: 8, textDecoration: "none" }}>
         Back to top
       </a>
+      <img src="/signature.png" height={72} style={{ marginBottom: 8 }} />
       <div>Iris Yang</div>
     </footer>
   );
