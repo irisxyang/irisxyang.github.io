@@ -1,4 +1,3 @@
-import SectionContainer from "../components/SectionContainer";
 import "./ProjectSection.css";
 
 function ProjectSection() {

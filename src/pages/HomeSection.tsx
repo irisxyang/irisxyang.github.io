@@ -1,4 +1,3 @@
-import SectionContainer from "../components/SectionContainer";
 import "./HomeSection.css";
 
 export default function HomeSection() {
