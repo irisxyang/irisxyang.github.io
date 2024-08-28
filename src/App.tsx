@@ -5,18 +5,30 @@ import ContactSection from "./pages/ContactSection";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ProjectSection from "./pages/ProjectSection";
+import Portfolio from "./pages/Portfolio";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <div id="home" />
+    <BrowserRouter>
       <NavBar />
-      <HomeSection />
-      <AboutSection />
-      <ProjectSection />
-      <ContactSection />
+      <div id="home" />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <HomeSection />
+              <AboutSection />
+              <ProjectSection />
+              <ContactSection />
+            </div>
+          }
+        />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

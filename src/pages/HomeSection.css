@@ -1,9 +1,12 @@
 .title-text {
   font-size: 128px;
   font-weight: 500;
+  margin-bottom: 0;
+  padding-bottom: 0;
   text-align: center;
   color: white;
   font-family: "Times New Roman", Times, serif;
+  text-shadow: rgb(0, 0, 0) 0 0 3px;
 }
 
 .home-background {
@@ -14,4 +17,19 @@
   background-position: center center;
   background-size: cover;
   padding: 128px;
+  flex-direction: column;
+}
+
+.home-subtitle {
+  font-size: 24px;
+  text-shadow: rgb(1, 35, 0) 0 0 5px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 80px;
+  transition: 0.2s;
+}
+
+.home-subtitle:hover {
+  font-size: 25px;
+  margin-bottom: 79px;
 }

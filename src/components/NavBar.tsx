@@ -9,10 +9,10 @@ function NavBar() {
         <span style={{ marginLeft: 8 }}>Iris Yang</span>
       </a>
       <div>
-        <NavBarLink destination="#home">Home</NavBarLink>
-        <NavBarLink destination="#about">About</NavBarLink>
-        <NavBarLink destination="#project">Projects</NavBarLink>
-        <NavBarLink destination="#contact">Contact</NavBarLink>
+        <NavBarLink destination="/#home">Home</NavBarLink>
+        <NavBarLink destination="/#about">About</NavBarLink>
+        <NavBarLink destination="/#project">Projects</NavBarLink>
+        <NavBarLink destination="/#contact">Contact</NavBarLink>
       </div>
     </nav>
   );
