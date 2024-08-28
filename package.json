@@ -1,7 +1,7 @@
 {
   "name": "irisxyang",
   "version": "0.1.0",
-  "homepage": "https://irisxyang.github.io/",
+  "homepage": "https://irisxyang.github.io/irisxyang",
   "private": true,
   "dependencies": {
     "react": "^18.3.1",

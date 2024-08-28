@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ProjectSection from "./pages/ProjectSection";
 import Portfolio from "./pages/Portfolio";
+import NotFoundPage from "./pages/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
             </div>
           }
         />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/" element={<Portfolio />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
