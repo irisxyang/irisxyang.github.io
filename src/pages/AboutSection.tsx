@@ -12,7 +12,7 @@ export default function AboutSection() {
           school, and have experience in Python, Java, C, HTML, CSS, R, React,
           and Typescript. I have been a part of multiple undergraduate research
           roles in the data science and machine learning fields, and am
-          extremely proficient in handling data analysis.
+          proficient in handling data analysis.
           <br />
           <br />
           Outside of my coursework, I am also involved in leadership roles
@@ -34,7 +34,14 @@ export default function AboutSection() {
             portfolio
           </a>
           !). I also love exploring Boston's food scene, and have a compiled,
-          categorized, and ranked list of restaurants I hope try in the future.
+          categorized, and ranked{" "}
+          <a
+            href="https://docs.google.com/spreadsheets/d/1LqJk9ZiuXwjlOL1pyuEISCRLk67cdXxH4sfjyFkadA0/edit?usp=sharing"
+            target="_blank"
+          >
+            list of restaurants
+          </a>{" "}
+          I hope try in the future.
         </p>
         <img src="/headshot.jpg" height={500} />
       </div>

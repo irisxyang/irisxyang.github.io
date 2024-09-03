@@ -18,12 +18,12 @@ function App() {
         <Route
           path="/"
           element={
-            <div>
+            <>
               <HomeSection />
               <AboutSection />
               <ProjectSection />
               <ContactSection />
-            </div>
+            </>
           }
         />
         <Route path="/portfolio/" element={<Portfolio />} />
