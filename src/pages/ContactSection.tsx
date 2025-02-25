@@ -20,7 +20,11 @@ function ContactSection() {
         >
           Connect with me
         </Contact>
-        <Contact title="Resume" dest="/resume.pdf" bg="url('/cloud3.png')">
+        <Contact
+          title="Resume"
+          dest="/Iris_Yang_Resume.pdf"
+          bg="url('/cloud3.png')"
+        >
           View my resume
         </Contact>
       </div>

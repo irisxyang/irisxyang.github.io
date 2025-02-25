@@ -11,9 +11,37 @@ function ProjectSection() {
       </h1>
       <div>
         <Project
-          title="Working Paper: Data Monetization Research"
-          date="May 2024 - Present"
-          overview="Working paper under MIT CISR studying the complex relationship between corporations and their data monetization practices based on survey data from over 300 companies."
+          title="Beam Search Enhancement Research"
+          date="December 2024"
+          overview="Modifications to beam search in order to reduce hallucinations in LLMs. Specifically, implemented dynamic beam sizes determined by leveraging attention scores as a measure of uncertainty."
+        >
+          <ul style={{ margin: 0, padding: "0 20px", marginBottom: "20px" }}>
+            <li>Used GPT-2 as a base model for beam search implementation</li>
+            <li>Implemented beam search and all modifications using PyTorch</li>
+          </ul>
+          <div className="project-link-container">
+            <a
+              className="project-link"
+              href="/beam_search_paper.pdf"
+              target="_blank"
+            >
+              Paper Link →
+            </a>
+          </div>
+          <div className="project-link-container">
+            <a
+              className="project-link"
+              href="https://colab.research.google.com/drive/1NFggBc8dCy2vaOq3xBIb0bldnNbGdkZ2?usp=sharing"
+              target="_blank"
+            >
+              Colab Link →
+            </a>
+          </div>
+        </Project>
+        <Project
+          title="Data Monetization Research"
+          date="May 2024 - January 2025"
+          overview="Research MIT CISR studying the complex relationship between corporations and their data monetization practices based on survey data from over 300 companies."
         >
           <ul style={{ margin: 0, padding: "0 20px", marginBottom: "20px" }}>
             <li>
@@ -31,7 +59,7 @@ function ProjectSection() {
           </ul>
         </Project>
         <Project
-          title="Handwriting Text Recognition Note Transcriber"
+          title="Handwriting Text Recognition and Note Transcriber"
           date="April 2024"
           overview="System that takes image input of handwritten notes, processes input via Google Cloud Vision API and various optimizations, and outputs a text transcription of the notes along with cropped versions of any hand-drawn images or graphs on the note page."
         >
@@ -85,7 +113,7 @@ function ProjectSection() {
           <div className="project-link-container">
             <a
               className="project-link"
-              href="https://github.com/irisxyang/htr-proj"
+              href="https://github.com/weblab-class/irisxyang-kingstonlew"
               target="_blank"
             >
               Github Link →
