@@ -1,35 +1,50 @@
-.title-text {
-  font-size: 128px;
-  font-weight: 500;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  text-align: center;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-  text-shadow: rgb(0, 0, 0) 0 0 3px;
-}
-
 .home-background {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../images/gwoc.webp");
-  background-position: center center;
-  background-size: cover;
-  padding: 128px;
-  flex-direction: column;
+    padding: 20px 45px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.home-subtitle {
-  font-size: 24px;
-  text-shadow: rgb(1, 35, 0) 0 0 5px;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 80px;
-  transition: 0.2s;
+.hero-banner{
+    background: var(--hero-gradient);
+    border-radius: 12px;
+    padding: 84px 0px 72px 40px;
+    margin-bottom: 20px;
 }
 
-.home-subtitle:hover {
-  font-size: 25px;
-  margin-bottom: 79px;
+.home-title{
+    font-size: 100px;
+    font-weight: 400;
+    color: var(--app-bg);
+    margin: 0;
 }
+
+
+.subsection-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 8px;
+    margin-bottom: 12px;
+}
+.subsection-link {
+    font-size: 14px;
+    color: var(--text-subtle);
+}
+
+.component-grid{
+    display: grid;
+    padding-top: 0;
+    margin-top: 0;
+
+    --min-col: 220px;
+    gap: 12px;
+      /* grid-template-columns: repeat(
+    auto-fill,
+    minmax(max(var(--min-col), (100% - 3 * var(--gap)) / 4), 1fr)
+  ); */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+}
+
+
+

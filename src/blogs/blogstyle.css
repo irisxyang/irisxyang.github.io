@@ -1,0 +1,40 @@
+.line {
+  position: relative;
+  transition: background 0.15s;
+}
+
+.line:hover {
+  /* background: #fff3b0;       */
+  background: var(--highlight);
+}
+
+.line__popup {
+  position: absolute;
+  bottom: 100%;              
+  left: 50%;
+  transform: translateX(-50%);  
+  margin-bottom: 8px;
+
+  opacity: 0;                /* hidden by default */
+  visibility: hidden;
+  transition: opacity 0.15s;
+
+  background: var(--app-bg);   
+  color: var(--text);
+  /* background: var(--text);          */
+  /* color: var(--panel); */
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  width: max-content;
+  max-width: 240px;
+  font-size: 14px;
+  z-index: 10;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  pointer-events: none;      /* popup never blocks the hover */
+}
+
+.line:hover .line__popup {   /* reveal on hover of the parent */
+  opacity: 1;
+  visibility: visible;
+}

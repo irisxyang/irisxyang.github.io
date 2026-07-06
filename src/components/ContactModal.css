@@ -1,0 +1,35 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;                       /* cover the whole viewport */
+  background: rgba(0, 0, 0, 0.35);   /* the dim */
+  display: flex;
+  align-items: center;
+  justify-content: center;        /* centers the card */
+  z-index: 1000;                  /* above everything */
+  padding: 24px;
+}
+.modal-card {
+  position: relative;
+  background: var(--panel);
+  color: var(--text);
+  border-radius: 20px;
+  padding: 40px;
+  padding-bottom: 60px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+.modal-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: transparent; border: none; cursor: pointer;
+  color: var(--text-subtle);
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+}
