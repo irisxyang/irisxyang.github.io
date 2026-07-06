@@ -30,7 +30,7 @@ export default function HomeSection() {
           ))}
         </div>
       </HomeSubsection>
-      <HomeSubsection heading="Blogs" linkTo="Blogs">
+      <HomeSubsection heading="Blogs" linkTo="blog">
         <div className="component-grid">
           {blogsByDate.slice(0, 3).map((blog) => (
             <BlogCard key={blog.id} blog={blog} />
