@@ -1,50 +1,99 @@
-import SectionContainer from "../components/SectionContainer";
 import "./AboutSection.css";
+import { Mail, Link, FileText } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <SectionContainer id="about">
-      <h1 className="section-title-text">About</h1>
-      <div className="about-container ">
-        <p className="about-paragraph">
-          Hi, I'm Iris! I'm a senior at MIT, double majoring in Computer Science
-          and Business Analytics. I have been coding since junior year of high
-          school, and have experience in Python, Java, C, HTML, CSS, R, React,
-          and Typescript. I have been a part of multiple undergraduate research
-          roles in the data science and machine learning fields, and am
-          proficient in handling data analysis.
+    <div
+      style={{
+        padding: "4px",
+        paddingTop: "12px",
+        display: "flex",
+        flexDirection: "row",
+      }}
+    >
+      <div>
+        <h1 className="subsection-title">About Me</h1>
+        <div
+          style={{
+            padding: "6px 80px 4px 8px",
+          }}
+        >
+          Hi, I'm Iris Yang! I recently graduated from MIT with my Master of
+          Engineering in Computer Science, where I researched attribution and
+          visualization techniques for ViT interpretability under MIT Media
+          Lab's{" "}
+          <a
+            href="https://www.media.mit.edu/groups/future-sketches/overview/"
+            target="_blank"
+          >
+            Future Sketches Group
+          </a>
+          , advised by{" "}
+          <a href="https://www.instagram.com/zach.lieberman" target="_blank">
+            Zach Lieberman
+          </a>
+          . Before that, I double majored in Computer Science and Business
+          Analytics during my undergrad.
           <br />
           <br />
-          Outside of my coursework, I am also involved in leadership roles
-          across multiple prestigious student organizations at MIT, such as{" "}
-          <a href="https://www.mitsbc.org/" target="_blank">
-            MIT Sloan Business Club
-          </a>{" "}
-          and{" "}
-          <a href="http://brassrat.mit.edu/2025/" target="_blank">
-            Class of 2025 Ring Committee
+          Outside of work, I am always staying active! I was a member of MIT's
+          Varsity Swimming and Diving Team, have been lifting for over 5 years,
+          and just recently started getting into running and cycling. You can
+          check out what activities I'm currently up to{" "}
+          <a href="https://www.instagram.com/narplifecrisis/" target="_blank">
+            here
           </a>
           .
           <br />
           <br />
-          Beyond my technical experience, I am a part of MIT's Varsity Swimming
-          and Diving Team, and I am passionate about all things art (Check out
-          my{" "}
-          <a href="/portfolio" target="_blank">
-            portfolio
-          </a>
-          !). I also love exploring Boston's food scene, and have a compiled,
-          categorized, and ranked{" "}
-          <a
-            href="https://docs.google.com/spreadsheets/d/1LqJk9ZiuXwjlOL1pyuEISCRLk67cdXxH4sfjyFkadA0/edit?usp=sharing"
-            target="_blank"
-          >
-            list of restaurants
-          </a>{" "}
-          I hope try in the future.
-        </p>
-        <img src="/headshot.jpg" height={500} />
+          Reach out below if you would like to get in touch!
+        </div>
+        <AboutLinks />
       </div>
-    </SectionContainer>
+      <img
+        src="/aboutme.jpg"
+        alt=""
+        style={{
+          maxWidth: "272px",
+          aspectRatio: "3/4",
+          objectFit: "cover",
+          borderRadius: "8px",
+          marginRight: "20px",
+          marginTop: "8px",
+          marginBottom: "8px",
+        }}
+      />
+    </div>
+  );
+}
+
+function AboutLinks() {
+  return (
+    <div className="about-links">
+      <a href="mailto:iris.xy.yang@gmail.com" className="about-link">
+        <Mail size={24} strokeWidth={1.8} />
+        <span>Email</span>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/irisxyang"
+        target="_blank"
+        rel="noreferrer"
+        className="about-link"
+      >
+        <Link size={24} strokeWidth={1.8} />
+        <span>LinkedIn</span>
+      </a>
+
+      <a
+        href="/Iris_Yang_Resume.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="about-link"
+      >
+        <FileText size={24} strokeWidth={1.8} />
+        <span>Resume</span>
+      </a>
+    </div>
   );
 }

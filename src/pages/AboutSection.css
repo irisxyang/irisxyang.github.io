@@ -1,14 +1,21 @@
-.about-container {
+.about-links {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: 16px 0px;
+  flex-direction: row;
+  justify-content: center;   /* centers the group horizontally */
+  align-items: center;
+  gap: 40px;
+  padding: 36px 0 0 0;
 }
 
-.about-paragraph {
-  margin-right: 72px;
-  margin-left: 40px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
+.about-link {
+  display: flex;
+  flex-direction: column;    /* icon stacked above text */
+  align-items: center;
+  color: var(--text-subtle);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s ease;
+}
+.about-link:hover {
+  color: var(--text);        /* darken on hover */
 }
