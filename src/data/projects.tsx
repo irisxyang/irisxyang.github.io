@@ -32,7 +32,7 @@ export const projects: Project[] = [
     links: [
       {
         label: "GitHub",
-        href: "https://github.com/irisxyang/irisxyang.github.io",
+        href: "https://github.com/irisxyang/vit_causality_framework",
       },
     ],
     tools: ["PyTorch"],

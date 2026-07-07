@@ -17,7 +17,10 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <div className="app-shell">
-        <SideBar onContactClick={() => setContactOpen(true)} />
+        <SideBar
+          onContactClick={() => setContactOpen((prev) => !prev)}
+          contactOpen={contactOpen}
+        />
         <main className="app-main">
           <Routes>
             <Route
@@ -36,23 +39,6 @@ function App() {
           </Routes>
         </main>
       </div>
-      {/* // <NavBar />
-      // <div id="home" />
-      // <Routes>
-      //   <Route
-      //     path="/"
-      //     element={
-      //       <>
-      //         <HomeSection />
-      //         <AboutSection />
-      //         <ProjectSection />
-      //         <ContactSection />
-      //       </>
-      //     }
-      //   />
-      //   <Route path="/portfolio/" element={<Portfolio />} />
-      //   <Route path="*" element={<NotFoundPage />} />
-      // </Routes> */}
       <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
       <Footer />
     </BrowserRouter>

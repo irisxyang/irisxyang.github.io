@@ -26,6 +26,7 @@ const NAV: NavItem[] = [
 
 type SidebarProps = {
   onContactClick: () => void;
+  contactOpen: boolean;
 };
 
 function SideBar({ onContactClick }: SidebarProps) {
@@ -60,15 +61,22 @@ function SideBar({ onContactClick }: SidebarProps) {
     const onKey = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement).tagName; // grab key pressed
       if (tag === "INPUT" || tag === "TEXTAREA") return;
+
+      if (e.key === "4") {
+        e.preventDefault();
+        onContactClick();
+        return;
+      }
+
       const match = NAV.find((n) => n.key === e.key); // match to nav link
       if (match) {
         e.preventDefault();
-        navigate(match.path); // navigate
+        navigate(match.path);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [navigate]);
+  }, [navigate, onContactClick]);
 
   const THEMES: { v: Mode; icon: LucideIcon; label: string }[] = [
     { v: "light", icon: Sun, label: "Light" },
