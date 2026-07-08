@@ -22,11 +22,15 @@ export const blogs: BlogMeta[] = [
     category: "Technical Talk",
     thumbnail: "/blog_images/2026-07-01-thumb.jpg",
   },
-  //   { id: "thesis-writeup",
-  //     title: "My Thesis, Plainly",
-  //     date: "2025-11-02",
-  //     blurb: "...",
-  // category: "Technical Talk"},
+  {
+    id: "2026-07-cycling-update",
+    title: "My Cycling Journey",
+    date: "2026-07-07",
+    blurb:
+      "Some of my thoughts as a beginner cyclist trying to get into the complex (and often elitist) sport of cycling.",
+    category: "Athletic Adventures",
+    thumbnail: "/blog_images/2026-07-12-thumb.jpg",
+  },
 ];
 
 export const blogsByDate = [...blogs].sort((a, b) =>

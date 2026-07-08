@@ -38,3 +38,11 @@
   opacity: 1;
   visibility: visible;
 }
+
+.subheading {
+    font-size: 22px;
+    font-weight: 450;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
