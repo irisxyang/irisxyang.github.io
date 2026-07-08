@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkirisxyang=self.webpackChunkirisxyang||[]).push([[817],{817:(s,e,i)=>{s.exports=i.p+"static/media/2026-07-site-update.ddbb2421b4c24d353c21.md"}}]);
