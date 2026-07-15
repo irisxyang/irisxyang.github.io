@@ -21,7 +21,7 @@ export default function STP2026Recap() {
         was pretty steep. Luckily enough, I stumbled across someone who was
         selling their ticket for $200, and made the decision to participate.
       </p>
-      <img src="/blog_images/2026-07-12-riding.jpg" />
+      <img src="/blog_images/2026-07-12-riding.JPG" />
       <h2 className="subheading">Preparation and Training</h2>
       <p>
         Up until this point, my longest ride so far had been biking the Boston
@@ -484,7 +484,7 @@ export default function STP2026Recap() {
             this point. I was exhausted, relieved, and so happy and proud.
             Overall, this was such an incredible journey--I learned so much
             about myself, cycling, and my abilities as a cyclist.
-            <img src="/blog_images/2026-07-12-finish.jpg" />
+            <img src="/blog_images/2026-07-12-finish.JPG" />
           </div>
         </div>
       </span>
