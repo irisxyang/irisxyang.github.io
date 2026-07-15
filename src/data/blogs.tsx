@@ -31,6 +31,14 @@ export const blogs: BlogMeta[] = [
     category: "Athletic Adventures",
     thumbnail: "/blog_images/2026-07-12-thumb.jpg",
   },
+  {
+    id: "2026-07-stp2026-recap",
+    title: "Seattle to Portland 2026",
+    date: "2026-07-12",
+    blurb: "Reflecting on my first time participating in STP.",
+    category: "Athletic Adventures",
+    thumbnail: "/blog_images/2026-07-13-thumb.jpg",
+  },
 ];
 
 export const blogsByDate = [...blogs].sort((a, b) =>

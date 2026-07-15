@@ -46,3 +46,90 @@
     padding: 0;
     padding-top: 20px;
 }
+
+
+/* USE THIS FOR TIMELINE FORMATTING */
+/* <span className="timeline">
+    <div className="timeline-entry">
+        <div className="timeline-label">INSERT TIME<div/>
+        <div className="timeline-description">INSERT DESCRIPTION<div/>
+    <div/>
+    etc. etc. etc. 
+<span/> */
+
+.timeline {
+  --time-col: 7.5rem;
+  --gap: 1.75rem;
+  --line: 2px;
+  --dot: 6px;
+  --lh: 1.6;
+  --line-color: var(--text);
+  --dot-color: var(--text);
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.timeline-entry {
+  display: grid;
+  grid-template-columns: var(--time-col) 1fr;
+  column-gap: var(--gap);
+  align-items: baseline;
+}
+
+.timeline-label {
+  text-align: right;
+  line-height: var(--lh);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.timeline-description {
+  position: relative;
+  padding-left: calc(var(--gap) + var(--line));
+  padding-bottom: 2.5rem;
+}
+
+.timeline-entry:last-child .timeline-description {
+  padding-bottom: 0;
+}
+
+.timeline-description img {
+  display: block;        /* removes the few px of gap under inline images */
+  max-width: 100%;       /* never wider than the description column */
+  height: auto;          /* keep the aspect ratio when width is capped */
+  border-radius: 4px;    /* optional */
+  margin-top: 0.75rem;   /* optional breathing room from the text */
+}
+
+/* THE LINE — starts at this dot, ends at the next one */
+.timeline-description::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: var(--line);
+  top: calc(var(--lh) * 0.5em);      /* start at this dot's center */
+  bottom: calc(var(--lh) * -0.5em);  /* end at the next dot's center */
+  background: var(--line-color);
+}
+
+.timeline-entry:last-child .timeline-description::after {
+  display: none;                     /* no line dangling past the last dot */
+}
+
+/* timeline dot */
+.timeline-description::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--lh) * 0.5em);
+  left: calc(var(--line) / 2);
+  transform: translate(-50%, -50%);
+  width: var(--dot);
+  height: var(--dot);
+  border-radius: 50%;
+  background: var(--dot-color);
+  z-index: 1;
+}
+
